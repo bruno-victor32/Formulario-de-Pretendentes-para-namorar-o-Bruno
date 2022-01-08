@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head class="header">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pretendentes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header class="description">
+            <h1> Formulario de pretendentes para namorar o Bruno</h1>
+            <p>Tudo aquilo que você sempre sonho está prestes a acontecer, depende somente e exclusivamente da sua iniciativa</p>
+        </header>
+        <nav class="description">
+            <a href="#">Home</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Comigo</a>
+        </nav>
+
+        <form >
+            <div class="form-group">
+                <label for="name" >Name</label>
+                <input 
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Digite seu nome...">
+            </div>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input 
+                type="email" 
+                name="email" 
+                id="email"
+                class="form-control"
+                placeholder="Digite seu E-mail">
+            </div>
+            <div class="form-group">
+                <label>Data de Nascimento</label>
+                <input 
+                type="date" 
+                name="date" 
+                id="date">
+            </div>
+            <div class="form-group">
+                <label>Qual e a sua profissão?</label>
+                <select >
+                    <option disabled>Selecione a função atual</option>
+                    <option value="student">Estudante</option>
+                    <option value="job">Trabalho em tempo integral</option>
+                    <option value="learner">Aprendiz em tempo integral</option>
+                    <option value="preferNo">Prefiro não dizer</option>
+                    <option value="other">Outros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Porque você tem interesse em namorar com o Bruno. Cite as qualidades:</p>
+                    <input 
+                    type="radio" 
+                    name="lindo" 
+                    class="input-radio"
+                    value="lindo">
+                    <label for="lindo">Lindo</label>
+
+                    <input 
+                    type="radio" 
+                    name="inteligencia" 
+                    class="input-radio"
+                    value="inteligencia">
+                    <label for="inteligencia">Inteligencia</label>
+
+                    <input 
+                    type="radio" 
+                    name="educado" 
+                    class="input-radio"
+                    value="educado">
+                    <label for="educado">Educado</label>
+
+                    <input 
+                    type="radio" 
+                    name="todas" 
+                    class="input-radio"
+                    value="todas">
+                    <label for="todas">Todas as alternativas</label>
+            </div>
+
+            <div class="form-group">
+                    <p>Porque você tem interesse em namorar o Bruno</p>
+                    <textarea 
+                    name="comments" 
+                    class="input-textarea" 
+                    placeholder="Insira seu comentário aqui..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button 
+                type="submit"
+                id="submit"
+                class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
